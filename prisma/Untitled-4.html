@@ -1,0 +1,15 @@
+<table><tr><th>type</th><th>name</th><th>tbl_name</th><th>rootpage</th><th>sql</th><tr><tr><td>table</td><td>_prisma_migrations</td><td>_prisma_migrations</td><td>2</td><td>CREATE TABLE &quot;_prisma_migrations&quot; (
+    &quot;id&quot;                    TEXT PRIMARY KEY NOT NULL,
+    &quot;checksum&quot;              TEXT NOT NULL,
+    &quot;finished_at&quot;           DATETIME,
+    &quot;migration_name&quot;        TEXT NOT NULL,
+    &quot;logs&quot;                  TEXT,
+    &quot;rolled_back_at&quot;        DATETIME,
+    &quot;started_at&quot;            DATETIME NOT NULL DEFAULT current_timestamp,
+    &quot;applied_steps_count&quot;   INTEGER UNSIGNED NOT NULL DEFAULT 0
+)</td></tr><tr><td>index</td><td>sqlite_autoindex__prisma_migrations_1</td><td>_prisma_migrations</td><td>3</td><td>NULL</td></tr><tr><td>table</td><td>Cole</td><td>Cole</td><td>4</td><td>CREATE TABLE &quot;Cole&quot; (
+    &quot;id&quot; TEXT NOT NULL PRIMARY KEY,
+    &quot;title&quot; TEXT NOT NULL,
+    &quot;description&quot; TEXT NOT NULL,
+    &quot;bar_code&quot; TEXT NOT NULL
+)</td></tr><tr><td>index</td><td>sqlite_autoindex_Cole_1</td><td>Cole</td><td>5</td><td>NULL</td></tr><tr><td>index</td><td>Cole_bar_code_key</td><td>Cole</td><td>6</td><td>CREATE UNIQUE INDEX &quot;Cole_bar_code_key&quot; ON &quot;Cole&quot;(&quot;bar_code&quot;)</td></tr></table>
