@@ -1,12 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { ModuleModule } from './module/module.module';
-import { ModuleModule } from './coletanea/module/module.module';
 
 @Module({
-  imports: [ModuleModule],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [],
+ // controllers: [],  // Remova 'AppController'
+ // providers: [],  // Remova 'AppService'
 })
 export class AppModule {}
